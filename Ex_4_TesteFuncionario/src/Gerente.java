@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author rmimm
+ */
+public class Gerente extends Funcionario {
+
+    private double salarioBase;
+    private double bonus;
+
+    public Gerente(String nome, double salarioBase, double bonus) {
+        super(nome);
+        this.salarioBase = salarioBase;
+        this.bonus = bonus;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return salarioBase + bonus;
+    }
+}
